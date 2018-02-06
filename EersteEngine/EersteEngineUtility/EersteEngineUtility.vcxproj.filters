@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Prerequisites">
+      <UniqueIdentifier>{f760a28f-efaf-440a-84c4-3acfd9fd148e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Math">
+      <UniqueIdentifier>{c0dd8d60-b70b-4fde-ba91-b572458214b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Math">
+      <UniqueIdentifier>{94328b82-5ca1-45cf-b826-b6739efe0862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\String">
+      <UniqueIdentifier>{99a933e9-bd76-40a4-bf35-0a8088d10a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Utility">
+      <UniqueIdentifier>{049f8802-a57c-4620-84fb-86fb84c8d50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Utility">
+      <UniqueIdentifier>{50c236e2-2328-423c-b4e3-3bd5356c48d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Allocator">
+      <UniqueIdentifier>{2b57bb8f-4b63-457d-bc5c-33e72af1c66c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utility\Timer.cpp">
+      <Filter>Fichiers sources\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Time.cpp">
+      <Filter>Fichiers sources\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\DynamicLibrary.cpp">
+      <Filter>Fichiers sources\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\DynamicLibraryManager.cpp">
+      <Filter>Fichiers sources\Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Prerequisites\PlatformDefines.h">
+      <Filter>Fichiers d%27en-tête\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Prerequisites\Types.h">
+      <Filter>Fichiers d%27en-tête\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Prerequisites\StdHeaders.h">
+      <Filter>Fichiers d%27en-tête\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Timer.h">
+      <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Prerequisites\PrerequisitesUtility.h">
+      <Filter>Fichiers d%27en-tête\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Time.h">
+      <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator\BasicAllocator.h">
+      <Filter>Fichiers d%27en-tête\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Module.h">
+      <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\DynamicLibrary.h">
+      <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="String\String.h">
+      <Filter>Fichiers d%27en-tête\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\DynamicLibraryManager.h">
+      <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
