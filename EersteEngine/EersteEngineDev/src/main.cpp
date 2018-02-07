@@ -1,4 +1,5 @@
-#include "Application.h"
+#include "PrerequisitesCore.h"
+#include "CoreApplication.h"
 
 #if EE_PLATFORM == EE_PLATFORM_WIN32
 	#include <windows.h>
@@ -17,5 +18,7 @@ int CALLBACK WinMain(
 int main()
 #endif
 {
-
+	START_UP_DESC desc;
+	CoreApplication::StartUp(desc);
+	CoreApplication::Instance().RunMainLoop();
 }

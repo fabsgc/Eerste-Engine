@@ -2,10 +2,6 @@
 
 #include "../Prerequisites/Types.h"
 
-#include <atomic>
-#include <limits>
-#include <new>
-#include <utility>
 
 #if EE_PLATFORM == BS_PLATFORM_LINUX
 	#include <malloc.h>
@@ -24,10 +20,6 @@ namespace ee
 		void free(void* data)
 		{
 			::free(data);
-		}
-
-		void clear()
-		{
 		}
 	};
 }

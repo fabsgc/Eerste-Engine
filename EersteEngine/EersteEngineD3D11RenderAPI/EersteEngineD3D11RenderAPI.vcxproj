@@ -85,6 +85,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_LOG_FILE=\"../../Logs/ErrorsD3D11RenderAPI.log\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -103,6 +104,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_LOG_FILE=\"../../Logs/ErrorsD3D11RenderAPI.log\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

@@ -73,11 +73,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\bin\$(ProjectName)\</OutDir>
     <TargetName>$(ProjectName)d</TargetName>
-    <IncludePath>..\EersteEngineUtility;..\EersteEngineCore;..\EersteEnginePublic;$(IncludePath)</IncludePath>
+    <IncludePath>..\EersteEngineUtility;..\EersteEngineCore;$(IncludePath)</IncludePath>
+    <LibraryPath>..\bin\EersteEngineUtility;..\bin\EersteEngineCore;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\bin\$(ProjectName)\</OutDir>
-    <IncludePath>..\EersteEngineUtility;..\EersteEngineCore;..\EersteEnginePublic;$(IncludePath)</IncludePath>
+    <IncludePath>..\EersteEngineUtility;..\EersteEngineCore;$(IncludePath)</IncludePath>
+    <LibraryPath>..\bin\EersteEngineUtility;..\bin\EersteEngineCore;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -86,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/DEE_LOG_FILE=\"../../Logs/ErrorsDev.log\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -105,6 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/DEE_LOG_FILE=\"../../Logs/ErrorsDev.log\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -134,9 +138,6 @@
   <ItemGroup>
     <ProjectReference Include="..\EersteEngineCore\EersteEngineCore.vcxproj">
       <Project>{80188129-9b0d-4c3e-af44-fa2f29ceffb3}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\EersteEnginePublic\EersteEnginePublic.vcxproj">
-      <Project>{b5276076-49a9-457e-a555-61846ce97278}</Project>
     </ProjectReference>
     <ProjectReference Include="..\EersteEngineUtility\EersteEngineUtility.vcxproj">
       <Project>{9d51164e-6ea4-453a-9632-86aeb82b27a7}</Project>

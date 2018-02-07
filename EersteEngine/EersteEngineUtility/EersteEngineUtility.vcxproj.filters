@@ -19,9 +19,6 @@
     <Filter Include="Fichiers d%27en-tête\Math">
       <UniqueIdentifier>{c0dd8d60-b70b-4fde-ba91-b572458214b5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Math">
-      <UniqueIdentifier>{94328b82-5ca1-45cf-b826-b6739efe0862}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Fichiers d%27en-tête\String">
       <UniqueIdentifier>{99a933e9-bd76-40a4-bf35-0a8088d10a31}</UniqueIdentifier>
     </Filter>
@@ -34,6 +31,12 @@
     <Filter Include="Fichiers d%27en-tête\Allocator">
       <UniqueIdentifier>{2b57bb8f-4b63-457d-bc5c-33e72af1c66c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Error">
+      <UniqueIdentifier>{009859f0-62d6-4854-9240-ca32a3b13772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Math">
+      <UniqueIdentifier>{6e01f0ca-5114-420f-a4f2-45ac70f3fd5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utility\Timer.cpp">
@@ -42,11 +45,29 @@
     <ClCompile Include="Utility\Time.cpp">
       <Filter>Fichiers sources\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Utility\DynamicLibrary.cpp">
+    <ClCompile Include="Utility\DynamicLib.cpp">
       <Filter>Fichiers sources\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Utility\DynamicLibraryManager.cpp">
+    <ClCompile Include="Utility\DynamicLibManager.cpp">
       <Filter>Fichiers sources\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Degree.cpp">
+      <Filter>Fichiers sources\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Radian.cpp">
+      <Filter>Fichiers sources\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Fichiers sources\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2.cpp">
+      <Filter>Fichiers sources\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector3.cpp">
+      <Filter>Fichiers sources\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector4.cpp">
+      <Filter>Fichiers sources\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -74,14 +95,38 @@
     <ClInclude Include="Utility\Module.h">
       <Filter>Fichiers d%27en-tête\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Utility\DynamicLibrary.h">
-      <Filter>Fichiers d%27en-tête\Utility</Filter>
-    </ClInclude>
     <ClInclude Include="String\String.h">
       <Filter>Fichiers d%27en-tête\String</Filter>
     </ClInclude>
-    <ClInclude Include="Utility\DynamicLibraryManager.h">
+    <ClInclude Include="Error\Error.h">
+      <Filter>Fichiers d%27en-tête\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\DynamicLib.h">
       <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\DynamicLibManager.h">
+      <Filter>Fichiers d%27en-tête\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Degree.h">
+      <Filter>Fichiers d%27en-tête\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Radian.h">
+      <Filter>Fichiers d%27en-tête\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Fichiers d%27en-tête\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Prerequisites\ForwardDeclarationUtility.h">
+      <Filter>Fichiers d%27en-tête\Prerequisites</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2.h">
+      <Filter>Fichiers d%27en-tête\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector3.h">
+      <Filter>Fichiers d%27en-tête\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector4.h">
+      <Filter>Fichiers d%27en-tête\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

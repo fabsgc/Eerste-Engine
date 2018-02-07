@@ -1,7 +1,15 @@
-﻿  Timer.cpp
+﻿  Vector4.cpp
+  Vector3.cpp
+  Generating Code...
+  Compiling...
+  Timer.cpp
   Time.cpp
-  DynamicLibraryManager.cpp
-  DynamicLibrary.cpp
-  Génération de code en cours...
-     Création de la bibliothèque ..\bin\EersteEngineUtility\EersteEngineUtilityd.lib et de l'objet ..\bin\EersteEngineUtility\EersteEngineUtilityd.exp
+  DynamicLibManager.cpp
+  DynamicLib.cpp
+  Vector2.cpp
+  Radian.cpp
+  Math.cpp
+  Degree.cpp
+  Generating Code...
+     Creating library ..\bin\EersteEngineUtility\EersteEngineUtilityd.lib and object ..\bin\EersteEngineUtility\EersteEngineUtilityd.exp
   EersteEngineUtility.vcxproj -> F:\3D-engine\Eerste-Engine\EersteEngine\EersteEngineUtility\..\bin\EersteEngineUtility\EersteEngineUtilityd.dll

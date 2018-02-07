@@ -1,7 +1,7 @@
 #pragma once
 
 #ifdef __BORLANDC__
-#define __STD_ALGORITHM
+	#define __STD_ALGORITHM
 #endif
 
 #include <cassert>
@@ -43,10 +43,8 @@
 #include <sstream>
 
 extern "C" {
-
 #   include <sys/types.h>
 #   include <sys/stat.h>
-
 }
 
 #if EE_PLATFORM == EE_PLATFORM_WIN32
@@ -66,10 +64,8 @@ extern "C" {
 
 #if EE_PLATFORM == EE_PLATFORM_LINUX
 extern "C" {
-
 #   include <unistd.h>
 #   include <dlfcn.h>
-
 }
 #endif
 

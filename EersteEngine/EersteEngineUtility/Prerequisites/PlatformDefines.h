@@ -1,5 +1,10 @@
 #pragma once
 
+// Debug enabled
+#ifndef NDEBUG
+#	define EE_DEBUG
+#endif
+
 // Platform options
 #define EE_PLATFORM_WIN32 1
 #define EE_PLATFORM_LINUX 2

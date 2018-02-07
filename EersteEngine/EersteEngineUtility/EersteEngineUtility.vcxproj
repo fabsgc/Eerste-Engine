@@ -82,7 +82,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/DEE_UTILITY_EXPORTS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_LOG_FILE=\"../../Logs/ErrorsUtility.log\" %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
     </ClCompile>
@@ -104,7 +104,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/DEE_UTILITY_EXPORTS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_LOG_FILE=\"../../Logs/ErrorsUtility.log\" %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
     </ClCompile>
@@ -130,20 +130,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Allocator\BasicAllocator.h" />
+    <ClInclude Include="Error\Error.h" />
+    <ClInclude Include="Math\Degree.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Radian.h" />
+    <ClInclude Include="Math\Vector2.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Math\Vector4.h" />
+    <ClInclude Include="Prerequisites\ForwardDeclarationUtility.h" />
     <ClInclude Include="Prerequisites\PrerequisitesUtility.h" />
     <ClInclude Include="Prerequisites\PlatformDefines.h" />
     <ClInclude Include="Prerequisites\StdHeaders.h" />
     <ClInclude Include="Prerequisites\Types.h" />
     <ClInclude Include="String\String.h" />
-    <ClInclude Include="Utility\DynamicLibrary.h" />
-    <ClInclude Include="Utility\DynamicLibraryManager.h" />
+    <ClInclude Include="Utility\DynamicLib.h" />
+    <ClInclude Include="Utility\DynamicLibManager.h" />
     <ClInclude Include="Utility\Module.h" />
     <ClInclude Include="Utility\Time.h" />
     <ClInclude Include="Utility\Timer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Utility\DynamicLibrary.cpp" />
-    <ClCompile Include="Utility\DynamicLibraryManager.cpp" />
+    <ClCompile Include="Math\Degree.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Math\Radian.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Utility\DynamicLib.cpp" />
+    <ClCompile Include="Utility\DynamicLibManager.cpp" />
     <ClCompile Include="Utility\Time.cpp" />
     <ClCompile Include="Utility\Timer.cpp" />
   </ItemGroup>

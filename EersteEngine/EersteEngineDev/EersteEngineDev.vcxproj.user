@@ -3,9 +3,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(ProjectDir)..\bin\EersteEngineCore;$(ProjectDir)..\bin\EersteEngineUtility
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(ProjectDir)..\bin\EersteEngineCore;$(ProjectDir)..\bin\EersteEngineUtility
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
   </PropertyGroup>
 </Project>

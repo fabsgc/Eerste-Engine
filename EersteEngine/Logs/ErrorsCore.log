@@ -1,0 +1,36 @@
+Assertion failed at f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\module.h:53 inside ee::Module<class ee::CoreApplication>::Instance
+Date: Feb  7 2018
+Time: 20:25:40
+Error: Trying to access a destroyed module.
+Condition: 0
+############################################: 
+Assertion failed at f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\module.h:53 inside ee::Module<class ee::CoreApplication>::Instance
+Date: Feb  7 2018
+Time: 20:25:40
+Error: Trying to access a destroyed module.
+Condition: 0
+############################################: 
+Assertion failed at f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\module.h:53 inside ee::Module<class ee::CoreApplication>::Instance
+Date: Feb  7 2018
+Time: 20:25:40
+Error: Trying to access a destroyed module.
+Condition: 0
+############################################: 
+Assertion failed at f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\module.h:53 inside ee::Module<class ee::CoreApplication>::Instance
+Date: Feb  7 2018
+Time: 20:25:40
+Error: Trying to access a destroyed module.
+Condition: 0
+############################################: 
+Assertion failed at f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\module.h:52 inside ee::Module<class ee::CoreApplication>::Instance
+Date: Feb  7 2018
+Time: 22:56:43
+Error: Trying to access a module but it hasn't been started up yet.
+Condition: 0
+############################################: 
+Assertion failed at f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\module.h:52 inside ee::Module<class ee::CoreApplication>::Instance
+Date: Feb  7 2018
+Time: 22:56:43
+Error: Trying to access a module but it hasn't been started up yet.
+Condition: 0
+############################################: 
