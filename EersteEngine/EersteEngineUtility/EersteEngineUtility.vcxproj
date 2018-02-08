@@ -82,7 +82,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_LOG_FILE=\"../../Logs/ErrorsUtility.log\" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_ERROR_LOG_FILE=\"../../Logs/ErrorsUtility.log\"  /DEE_DEBUG_LOG_FILE=\"../../Logs/DebugUtility.log\" %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
     </ClCompile>
@@ -104,7 +104,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_LOG_FILE=\"../../Logs/ErrorsUtility.log\" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_UTILITY_EXPORTS /DEE_ERROR_LOG_FILE=\"../../Logs/ErrorsUtility.log\"  /DEE_DEBUG_LOG_FILE=\"../../Logs/DebugUtility.log\" %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
     </ClCompile>
@@ -131,10 +131,22 @@
   <ItemGroup>
     <ClInclude Include="Allocator\BasicAllocator.h" />
     <ClInclude Include="Error\Error.h" />
+    <ClInclude Include="Log\Log.h" />
+    <ClInclude Include="Math\AABOX.h" />
+    <ClInclude Include="Math\Bounds.h" />
     <ClInclude Include="Math\Degree.h" />
     <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Matrix3.h" />
+    <ClInclude Include="Math\Matrix4.h" />
+    <ClInclude Include="Math\Plane.h" />
+    <ClInclude Include="Math\Quaternion.h" />
     <ClInclude Include="Math\Radian.h" />
+    <ClInclude Include="Math\Ray.h" />
+    <ClInclude Include="Math\Rect2.h" />
+    <ClInclude Include="Math\Rect2I.h" />
+    <ClInclude Include="Math\Sphere.h" />
     <ClInclude Include="Math\Vector2.h" />
+    <ClInclude Include="Math\Vector2I.h" />
     <ClInclude Include="Math\Vector3.h" />
     <ClInclude Include="Math\Vector4.h" />
     <ClInclude Include="Prerequisites\ForwardDeclarationUtility.h" />
@@ -145,15 +157,26 @@
     <ClInclude Include="String\String.h" />
     <ClInclude Include="Utility\DynamicLib.h" />
     <ClInclude Include="Utility\DynamicLibManager.h" />
-    <ClInclude Include="Utility\Module.h" />
+    <ClInclude Include="Utility\IModule.h" />
     <ClInclude Include="Utility\Time.h" />
     <ClInclude Include="Utility\Timer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Math\AABOX.cpp" />
+    <ClCompile Include="Math\Bounds.cpp" />
     <ClCompile Include="Math\Degree.cpp" />
     <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Math\Matrix3.cpp" />
+    <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\Plane.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
     <ClCompile Include="Math\Radian.cpp" />
+    <ClCompile Include="Math\Ray.cpp" />
+    <ClCompile Include="Math\Rect2.cpp" />
+    <ClCompile Include="Math\Rect2I.cpp" />
+    <ClCompile Include="Math\Sphere.cpp" />
     <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector2I.cpp" />
     <ClCompile Include="Math\Vector3.cpp" />
     <ClCompile Include="Math\Vector4.cpp" />
     <ClCompile Include="Utility\DynamicLib.cpp" />

@@ -9,108 +9,151 @@ namespace ee
 	class EE_UTILITY_EXPORT Math {
 	public:
 		/** Inverse cosine. */
-		static Radian acos(float val);
+		static Radian Acos(float val);
 
 		/** Inverse sine. */
-		static Radian asin(float val);
+		static Radian Asin(float val);
 
 		/** Inverse tangent. */
-		static Radian atan(float val) { return Radian(std::atan(val)); }
+		static Radian Atan(float val) { return Radian(std::atan(val)); }
 
 		/** Inverse tangent with two arguments, returns angle between the X axis and the point. */
-		static Radian atan2(float y, float x) { return Radian(std::atan2(y, x)); }
+		static Radian Atan2(float y, float x) { return Radian(std::atan2(y, x)); }
 
 		/** Cosine. */
-		static float cos(const Radian& val) { return (float)std::cos(val.valueRadians()); }
+		static float Cos(const Radian& val) { return (float)std::cos(val.ValueRadians()); }
 
 		/** Cosine. */
-		static float cos(float val) { return (float)std::cos(val); }
+		static float Cos(float val) { return (float)std::cos(val); }
 
 		/** Sine. */
-		static float sin(const Radian& val) { return (float)std::sin(val.valueRadians()); }
+		static float Sin(const Radian& val) { return (float)std::sin(val.ValueRadians()); }
 
 		/** Sine. */
-		static float sin(float val) { return (float)std::sin(val); }
+		static float Sin(float val) { return (float)std::sin(val); }
 
 		/** Tangent. */
-		static float tan(const Radian& val) { return (float)std::tan(val.valueRadians()); }
+		static float Tan(const Radian& val) { return (float)std::tan(val.ValueRadians()); }
 
 		/** Tangent. */
-		static float tan(float val) { return (float)std::tan(val); }
+		static float Tan(float val) { return (float)std::tan(val); }
 
 		/** Square root. */
-		static float sqrt(float val) { return (float)std::sqrt(val); }
+		static float Sqrt(float val) { return (float)std::sqrt(val); }
 
 		/** Square root. */
-		static Radian sqrt(const Radian& val) { return Radian(std::sqrt(val.valueRadians())); }
+		static Radian Sqrt(const Radian& val) { return Radian(std::sqrt(val.ValueRadians())); }
 
 		/** Square root. */
-		static Degree sqrt(const Degree& val) { return Degree(std::sqrt(val.valueDegrees())); }
+		static Degree Sqrt(const Degree& val) { return Degree(std::sqrt(val.ValueDegrees())); }
 
 		/** Square root followed by an inverse. */
-		static float invSqrt(float val);
+		static float InvSqrt(float val);
 
 		/** Returns square of the provided value. */
-		static float sqr(float val) { return val * val; }
+		static float Sqr(float val) { return val * val; }
 
 		/** Returns base raised to the provided power. */
-		static float pow(float base, float exponent) { return (float)std::pow(base, exponent); }
+		static float Pow(float base, float exponent) { return (float)std::pow(base, exponent); }
 
 		/** Returns euler number (e) raised to the provided power. */
-		static float exp(float val) { return (float)std::exp(val); }
+		static float Exp(float val) { return (float)std::exp(val); }
 
 		/** Returns natural (base e) logarithm of the provided value. */
-		static float log(float val) { return (float)std::log(val); }
+		static float Log(float val) { return (float)std::log(val); }
 
 		/** Returns base 2 logarithm of the provided value. */
-		static float log2(float val) { return (float)(std::log(val) / LOG2); }
+		static float Log2(float val) { return (float)(std::log(val) / LOG2); }
 
 		/** Returns base N logarithm of the provided value. */
-		static float logN(float base, float val) { return (float)(std::log(val) / std::log(base)); }
+		static float LogN(float base, float val) { return (float)(std::log(val) / std::log(base)); }
 
 		/** Returns the sign of the provided value as 1 or -1. */
-		static float sign(float val);
+		static float Sign(float val);
 
 		/** Returns the sign of the provided value as 1 or -1. */
-		static Radian sign(const Radian& val) { return Radian(sign(val.valueRadians())); }
+		static Radian Sign(const Radian& val) { return Radian(Sign(val.ValueRadians())); }
 
 		/** Returns the sign of the provided value as 1 or -1. */
-		static Degree sign(const Degree& val) { return Degree(sign(val.valueDegrees())); }
+		static Degree Sign(const Degree& val) { return Degree(Sign(val.ValueDegrees())); }
 
 		/** Returns the absolute value. */
-		static float abs(float val) { return float(std::fabs(val)); }
+		static float Abs(float val) { return float(std::fabs(val)); }
 
 		/** Returns the absolute value. */
-		static Degree abs(const Degree& val) { return Degree(std::fabs(val.valueDegrees())); }
+		static Degree Abs(const Degree& val) { return Degree(std::fabs(val.ValueDegrees())); }
 
 		/** Returns the absolute value. */
-		static Radian abs(const Radian& val) { return Radian(std::fabs(val.valueRadians())); }
+		static Radian Abs(const Radian& val) { return Radian(std::fabs(val.ValueRadians())); }
 
 		/** Returns the nearest integer equal or higher to the provided value. */
-		static float ceil(float val) { return (float)std::ceil(val); }
+		static float Ceil(float val) { return (float)std::ceil(val); }
 
 		/** Returns the nearest integer equal or higher to the provided value. */
-		static int ceilToInt(float val) { return (int)std::ceil(val); }
+		static int CeilToInt(float val) { return (int)std::ceil(val); }
 
 		/** Returns the integer nearest to the provided value. */
-		static float round(float val) { return (float)std::floor(val + 0.5f); }
+		static float Round(float val) { return (float)std::floor(val + 0.5f); }
 
 		/** Returns the integer nearest to the provided value. */
-		static int roundToInt(float val) { return (int)std::floor(val + 0.5f); }
+		static int RoundToInt(float val) { return (int)std::floor(val + 0.5f); }
 
-		/** Checks if the value is a valid number. */
-		static bool isNaN(float f)
-		{
-			return f != f;
-		}
+		/**
+		* Divides an integer by another integer and returns the result, rounded up. Only works if both integers are
+		* positive.
+		*/
+		template<class T>
+		static constexpr T divideAndRoundUp(T n, T d) { return (n + d - 1) / d; }
+
+		/** Returns the nearest integer equal or lower of the provided value. */
+		static float Floor(float val) { return (float)std::floor(val); }
+
+		/** Returns the nearest integer equal or lower of the provided value. */
+		static int FloorToInt(float val) { return (int)std::floor(val); }
 
 		/** Clamp a value within an inclusive range. */
 		template <typename T>
-		static T clamp(T val, T minval, T maxval)
+		static T Clamp(T val, T minval, T maxval)
 		{
 			assert(minval <= maxval && "Invalid clamp range");
 			return std::max(std::min(val, maxval), minval);
 		}
+
+		/** Checks if the value is a valid number. */
+		static bool IsNaN(float f)
+		{
+			return f != f;
+		}
+
+		/** Compare two floats, using tolerance for inaccuracies. */
+		static bool ApproxEquals(float a, float b,
+			float tolerance = std::numeric_limits<float>::epsilon())
+		{
+			return fabs(b - a) <= tolerance;
+		}
+
+		/** Compare two doubles, using tolerance for inaccuracies. */
+		static bool ApproxEquals(double a, double b,
+			double tolerance = std::numeric_limits<double>::epsilon())
+		{
+			return fabs(b - a) <= tolerance;
+		}
+
+		/** Compare two 2D vectors, using tolerance for inaccuracies. */
+		static bool ApproxEquals(const Vector2& a, const Vector2& b,
+			float tolerance = std::numeric_limits<float>::epsilon());
+
+		/** Compare two 3D vectors, using tolerance for inaccuracies. */
+		static bool ApproxEquals(const Vector3& a, const Vector3& b,
+			float tolerance = std::numeric_limits<float>::epsilon());
+
+		/** Compare two 4D vectors, using tolerance for inaccuracies. */
+		static bool ApproxEquals(const Vector4& a, const Vector4& b,
+			float tolerance = std::numeric_limits<float>::epsilon());
+
+		/** Compare two quaternions, using tolerance for inaccuracies. */
+		static bool ApproxEquals(const Quaternion& a, const Quaternion& b,
+			float tolerance = std::numeric_limits<float>::epsilon());
 
 		static constexpr float POS_INFINITY = std::numeric_limits<float>::infinity();
 		static constexpr float NEG_INFINITY = -std::numeric_limits<float>::infinity();

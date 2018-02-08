@@ -1,2 +1,42 @@
 ﻿  CoreApplication.cpp
+f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\dynamiclib.h(43): warning C4251: 'ee::DynamicLib::_name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'ee::DynamicLib'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xstring(4054): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\dynamiclibmanager.h(19): warning C4251: 'ee::DynamicLibManager::_loadedLibraries': class 'std::map<ee::String,std::shared_ptr<ee::DynamicLib>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'ee::DynamicLibManager'
+          with
+          [
+              _Kty=ee::String,
+              _Ty=std::shared_ptr<ee::DynamicLib>
+          ]
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\map(76): note: see declaration of 'std::map<ee::String,std::shared_ptr<ee::DynamicLib>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=ee::String,
+              _Ty=std::shared_ptr<ee::DynamicLib>
+          ]
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\platform\window.h(13): warning C4251: 'ee::WINDOW_DESC::Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of struct 'ee::WINDOW_DESC'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xstring(4055): note: see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\coreapplication.h(49): warning C4251: 'ee::CoreApplication::_startUpDesc': struct 'ee::START_UP_DESC' needs to have dll-interface to be used by clients of class 'ee::CoreApplication'
+  f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\coreapplication.h(12): note: see declaration of 'ee::START_UP_DESC'
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\coreapplication.h(51): warning C4251: 'ee::CoreApplication::_renderer': class 'std::shared_ptr<ee::DynamicLib>' needs to have dll-interface to be used by clients of class 'ee::CoreApplication'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\memory(1316): note: see declaration of 'std::shared_ptr<ee::DynamicLib>'
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\coreapplication.h(52): warning C4251: 'ee::CoreApplication::_renderAPI': class 'std::shared_ptr<ee::DynamicLib>' needs to have dll-interface to be used by clients of class 'ee::CoreApplication'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\memory(1316): note: see declaration of 'std::shared_ptr<ee::DynamicLib>'
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\coreapplication.h(53): warning C4251: 'ee::CoreApplication::_window': class 'std::shared_ptr<ee::Window>' needs to have dll-interface to be used by clients of class 'ee::CoreApplication'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\memory(1316): note: see declaration of 'std::shared_ptr<ee::Window>'
+  Generating Code...
+  Compiling...
+  Window.cpp
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\platform\window.h(13): warning C4251: 'ee::WINDOW_DESC::Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of struct 'ee::WINDOW_DESC'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xstring(4055): note: see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
+  Win32Window.cpp
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\platform\window.h(13): warning C4251: 'ee::WINDOW_DESC::Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of struct 'ee::WINDOW_DESC'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xstring(4055): note: see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
+  MacOSWindow.cpp
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\platform\window.h(13): warning C4251: 'ee::WINDOW_DESC::Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of struct 'ee::WINDOW_DESC'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xstring(4055): note: see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
+  LinuxWindow.cpp
+f:\3d-engine\eerste-engine\eersteengine\eersteenginecore\platform\window.h(13): warning C4251: 'ee::WINDOW_DESC::Title': class 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' needs to have dll-interface to be used by clients of struct 'ee::WINDOW_DESC'
+  f:\softwares\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xstring(4055): note: see declaration of 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'
+  Generating Code...
+     Creating library ..\bin\EersteEngineCore\EersteEngineCored.lib and object ..\bin\EersteEngineCore\EersteEngineCored.exp
   EersteEngineCore.vcxproj -> F:\3D-engine\Eerste-Engine\EersteEngine\EersteEngineCore\..\bin\EersteEngineCore\EersteEngineCored.dll

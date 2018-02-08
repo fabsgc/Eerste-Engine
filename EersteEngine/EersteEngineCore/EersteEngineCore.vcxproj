@@ -88,7 +88,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
-      <AdditionalOptions>/DEE_CORE_EXPORTS  /DEE_LOG_FILE=\"../../Logs/ErrorsCore.log\" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_CORE_EXPORTS  /DEE_ERROR_LOG_FILE=\"../../Logs/ErrorsCore.log\" /DEE_DEBUG_LOG_FILE=\"../../Logs/DebugCore.log\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,7 +107,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/DEE_CORE_EXPORTS  /DEE_LOG_FILE=\"../../Logs/ErrorsCore.log\" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_CORE_EXPORTS  /DEE_ERROR_LOG_FILE=\"../../Logs/ErrorsCore.log\" /DEE_DEBUG_LOG_FILE=\"../../Logs/DebugCore.log\" %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
     </ClCompile>
@@ -137,10 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreApplication.h" />
-    <ClInclude Include="PrerequisitesCore.h" />
+    <ClInclude Include="Platform\Linux\LinuxWindow.h" />
+    <ClInclude Include="Platform\MacOS\MacOSWindow.h" />
+    <ClInclude Include="Platform\Win32\Win32Window.h" />
+    <ClInclude Include="Platform\Window.h" />
+    <ClInclude Include="CorePrerequisites.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CoreApplication.cpp" />
+    <ClCompile Include="Platform\Linux\LinuxWindow.cpp" />
+    <ClCompile Include="Platform\MacOS\MacOSWindow.cpp" />
+    <ClCompile Include="Platform\Win32\Win32Window.cpp" />
+    <ClCompile Include="Platform\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

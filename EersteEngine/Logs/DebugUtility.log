@@ -1,0 +1,10 @@
+Log: f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\dynamiclibmanager.cpp:31 inside ee::DynamicLibManager::Load
+Date: Feb  8 2018
+Time: 23:01:17
+Message: ../EersteEngineD3D11RenderAPI/EersteEngineD3D11RenderAPId.dll loaded
+############################################: 
+Log: f:\3d-engine\eerste-engine\eersteengine\eersteengineutility\utility\dynamiclibmanager.cpp:31 inside ee::DynamicLibManager::Load
+Date: Feb  8 2018
+Time: 23:01:17
+Message: ../EersteEngineRendererEE/EersteEngineRendererEEd.dll loaded
+############################################: 

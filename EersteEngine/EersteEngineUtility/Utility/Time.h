@@ -1,27 +1,27 @@
 #pragma once
 
 #include "../Prerequisites/PrerequisitesUtility.h"
-#include "../Utility/Module.h"
+#include "../Utility/IModule.h"
 #include "../Utility/Timer.h"
 
 namespace ee
 {
-	class Time: public Module<Time>
+	class EE_UTILITY_EXPORT Time: public IModule<Time>
 	{
 	public:
-		EE_UTILITY_EXPORT Time();
-		EE_UTILITY_EXPORT ~Time();
+		Time();
+		~Time();
 
-		EE_UTILITY_EXPORT float GetTime() const { return _timeSinceStart; }
-		EE_UTILITY_EXPORT UINT64 GetTimeMs() const { return _timeSinceStartMs; }
-		EE_UTILITY_EXPORT float GetFrameDelta() const { return _frameDelta; }
-		EE_UTILITY_EXPORT UINT64 GetFrameIdx() const { return _currentFrame.load(); }
-		EE_UTILITY_EXPORT UINT64 GetTimePrecise() const;
-		EE_UTILITY_EXPORT UINT64 GetStartTimeMs() const { return _appStartTime; }
-		EE_UTILITY_EXPORT void Update();
+		float GetTime() const { return _timeSinceStart; }
+		UINT64 GetTimeMs() const { return _timeSinceStartMs; }
+		float GetFrameDelta() const { return _frameDelta; }
+		UINT64 GetFrameIdx() const { return _currentFrame.load(); }
+		UINT64 GetTimePrecise() const;
+		UINT64 GetStartTimeMs() const { return _appStartTime; }
+		void Update();
 
 	public:
-		EE_UTILITY_EXPORT static const double MICROSEC_TO_SEC;
+		static const double MICROSEC_TO_SEC;
 
 	private:
 		float  _frameDelta;

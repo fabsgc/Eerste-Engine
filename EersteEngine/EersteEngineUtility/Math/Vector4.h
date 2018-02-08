@@ -21,7 +21,7 @@ namespace ee
 		{ }
 
 		/** Exchange the contents of this vector with another. */
-		void swap(Vector4& other)
+		void Swap(Vector4& other)
 		{
 			std::swap(x, other.x);
 			std::swap(y, other.y);
@@ -44,13 +44,13 @@ namespace ee
 		}
 
 		/** Pointer accessor for direct copying. */
-		float* ptr()
+		float* Ptr()
 		{
 			return &x;
 		}
 
 		/** Pointer accessor for direct copying. */
-		const float* ptr() const
+		const float* Ptr() const
 		{
 			return &x;
 		}
@@ -253,13 +253,13 @@ namespace ee
 		}
 
 		/** Calculates the dot (scalar) product of this vector with another. */
-		float dot(const Vector4& vec) const
+		float Dot(const Vector4& vec) const
 		{
 			return x * vec.x + y * vec.y + z * vec.z + w * vec.w;
 		}
 
 		/** Checks are any of the vector components NaN. */
-		inline bool isNaN() const;
+		inline bool IsNaN() const;
 
 	public:
 		static const Vector4 ZERO;

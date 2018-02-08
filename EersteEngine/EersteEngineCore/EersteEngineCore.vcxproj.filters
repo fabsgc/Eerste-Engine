@@ -13,18 +13,90 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Component">
+      <UniqueIdentifier>{a9b8f662-e924-45c5-a00b-f7d8a39a9717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Component">
+      <UniqueIdentifier>{f5ed28e6-2c22-40c1-9b96-9a2810e19bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Resources">
+      <UniqueIdentifier>{0144e30e-7392-44cf-b954-ab25ec68036b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Resources">
+      <UniqueIdentifier>{01d9f6be-240b-47c8-b5ae-35c3531663d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\RenderAPI">
+      <UniqueIdentifier>{03d601cc-b8f5-4975-bfc6-d1fe6aad6b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Renderer">
+      <UniqueIdentifier>{e828a715-17ef-425e-8291-a0b0e44a24cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\RenderAPI">
+      <UniqueIdentifier>{09722f46-8065-404e-b077-11c135f07e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Renderer">
+      <UniqueIdentifier>{966d1bb4-f398-4245-8505-6efbf23e53ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform">
+      <UniqueIdentifier>{97784f88-e61b-4773-b3f3-3ef782171b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform\Win32">
+      <UniqueIdentifier>{de4183a5-81e2-4d30-a37a-9a0ce0a3096b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform\Linux">
+      <UniqueIdentifier>{0203b233-269e-486a-8729-db396fc8f591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Platform\MacOS">
+      <UniqueIdentifier>{6d4b544f-0f59-45ba-917a-0ac239b1ade7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform">
+      <UniqueIdentifier>{706ceacd-79d8-4192-ba5d-91ead8f1bb5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform\Win32">
+      <UniqueIdentifier>{bcacf67e-5f2f-4b50-8cb3-c073feedf396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform\Linux">
+      <UniqueIdentifier>{4d2edd4c-1470-4750-9932-37dcc54b8bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Platform\MacOS">
+      <UniqueIdentifier>{faf59d71-a2f9-45bd-8a60-9d1c2c06556f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PrerequisitesCore.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="CoreApplication.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Window.h">
+      <Filter>Fichiers d%27en-tête\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePrerequisites.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Win32\Win32Window.h">
+      <Filter>Fichiers d%27en-tête\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\MacOS\MacOSWindow.h">
+      <Filter>Fichiers d%27en-tête\Platform\MacOS</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Linux\LinuxWindow.h">
+      <Filter>Fichiers d%27en-tête\Platform\Linux</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CoreApplication.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Window.cpp">
+      <Filter>Fichiers sources\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Win32\Win32Window.cpp">
+      <Filter>Fichiers sources\Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\MacOS\MacOSWindow.cpp">
+      <Filter>Fichiers sources\Platform\MacOS</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Linux\LinuxWindow.cpp">
+      <Filter>Fichiers sources\Platform\Linux</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

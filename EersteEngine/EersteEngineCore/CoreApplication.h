@@ -1,8 +1,10 @@
 #pragma once
 
-#include "PrerequisitesCore.h"
-#include "Utility/Module.h"
+#include "CorePrerequisites.h"
+#include "Utility/IModule.h"
 #include "Utility/DynamicLib.h"
+#include "Utility/DynamicLibManager.h"
+#include "Platform\Window.h"
 
 namespace ee
 {
@@ -18,34 +20,37 @@ namespace ee
 		}
 	};
 
-	class CoreApplication : public Module<CoreApplication>
+	class EE_CORE_EXPORT CoreApplication : public IModule<CoreApplication>
 	{
 	public:
-		EE_CORE_EXPORT CoreApplication(const START_UP_DESC& desc);
-		EE_CORE_EXPORT virtual ~CoreApplication();
+		 CoreApplication(const START_UP_DESC& desc);
+		 virtual ~CoreApplication();
 
-		EE_CORE_EXPORT void RunMainLoop();
-		EE_CORE_EXPORT void StopMainLoop();
+		 void RunMainLoop();
+		 void StopMainLoop();
 
 		template<class T = CoreApplication>
 		static void StartUp(const START_UP_DESC& desc)
 		{
-			Module::StartUp<T>(desc);
+			IModule::StartUp<T>(desc);
 		}
 
 	protected:
-		EE_CORE_EXPORT void OnStartUp() override;
-		EE_CORE_EXPORT void OnShutDown() override;
+		 void OnStartUp() override;
+		 void OnShutDown() override;
 
-		EE_CORE_EXPORT void StartUpRenderAPI();
-		EE_CORE_EXPORT void StartUpRenderer();
-		EE_CORE_EXPORT void StartUpWindow();
+		 void StartUpRenderAPI();
+		 void StartUpRenderer();
+		 void StartUpWindow();
 
 	private:
 		volatile bool _runMainLoop;
 
+		START_UP_DESC _startUpDesc;
+
 		SPtr<DynamicLib> _renderer;
 		SPtr<DynamicLib> _renderAPI;
+		SPtr<Window>     _window;
 	};
 
 	EE_CORE_EXPORT CoreApplication& gCoreApplication();

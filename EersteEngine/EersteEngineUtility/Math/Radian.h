@@ -15,9 +15,9 @@ namespace ee
 		Radian& operator= (const Radian& r) { _rad = r._rad; return *this; }
 		Radian& operator= (const Degree& d);
 
-		float valueDegrees() const;
-		float valueRadians() const { return _rad; }
-		Radian wrap();
+		float ValueDegrees() const;
+		float ValueRadians() const { return _rad; }
+		Radian Wrap();
 
 		const Radian& operator+ () const { return *this; }
 		Radian operator+ (const Radian& r) const { return Radian(_rad + r._rad); }

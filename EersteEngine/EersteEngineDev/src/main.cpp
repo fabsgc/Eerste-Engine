@@ -1,4 +1,4 @@
-#include "PrerequisitesCore.h"
+#include "CorePrerequisites.h"
 #include "CoreApplication.h"
 
 #if EE_PLATFORM == EE_PLATFORM_WIN32
@@ -19,6 +19,13 @@ int main()
 #endif
 {
 	START_UP_DESC desc;
+
+	desc.RenderAPI = EE_RENDER_API;
+	desc.Renderer = EE_RENDERER;
+
 	CoreApplication::StartUp(desc);
-	CoreApplication::Instance().RunMainLoop();
+	CoreApplication& app = gCoreApplication();
+
+	app.RunMainLoop();
+	app.ShutDown();
 }

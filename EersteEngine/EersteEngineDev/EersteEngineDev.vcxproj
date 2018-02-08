@@ -88,8 +88,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/DEE_LOG_FILE=\"../../Logs/ErrorsDev.log\" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_ERROR_LOG_FILE=\"../../Logs/ErrorsDev.log\" /DEE_DEBUG_LOG_FILE=\"../../Logs/DebugDev.log\"  /DEE_RENDER_API=\"../EersteEngineD3D11RenderAPI/EersteEngineD3D11RenderAPId\" /DEE_RENDERER=\"../EersteEngineRendererEE/EersteEngineRendererEEd\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -108,7 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/DEE_LOG_FILE=\"../../Logs/ErrorsDev.log\" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEE_ERROR_LOG_FILE=\"../../Logs/ErrorsDev.log\" /DEE_DEBUG_LOG_FILE=\"../../Logs/DebugDev.log\"  /DEE_RENDER_API=\"../EersteEngineD3D11RenderAPI/EersteEngineD3D11RenderAPId\" /DEE_RENDERER=\"../EersteEngineRendererEE/EersteEngineRendererEEd\" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

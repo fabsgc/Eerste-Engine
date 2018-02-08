@@ -6,7 +6,7 @@ namespace ee
 	{
 	}
 
-	DynamicLib* DynamicLibManager::Load(const String& name)
+	SPtr<DynamicLib> DynamicLibManager::Load(const String& name)
 	{
 		String filename = name;
 		const UINT32 length = (UINT32)filename.length();
@@ -25,14 +25,16 @@ namespace ee
 		}
 		else
 		{
-			DynamicLib* newLib = new DynamicLib(filename);
+			SPtr<DynamicLib> newLib(new DynamicLib(filename));
 			_loadedLibraries[filename] = newLib;
+
+			EE_LOG_DEBUG(filename + " loaded");
 
 			return newLib;
 		}
 	}
 
-	void DynamicLibManager::Unload(DynamicLib* library)
+	void DynamicLibManager::Unload(SPtr<DynamicLib> library)
 	{
 		auto iterFind = _loadedLibraries.find(library->getName());
 		if (iterFind != _loadedLibraries.end())
@@ -41,7 +43,6 @@ namespace ee
 		}
 
 		library->Unload();
-		delete library;
 	}
 
 	DynamicLibManager::~DynamicLibManager()
@@ -49,7 +50,6 @@ namespace ee
 		for (auto& entry : _loadedLibraries)
 		{
 			entry.second->Unload();
-			delete entry.second;
 		}
 
 		_loadedLibraries.clear();

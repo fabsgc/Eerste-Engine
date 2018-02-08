@@ -21,23 +21,23 @@ namespace ee
 #    define DYNAMIC_LIB_UNLOAD( a ) dlclose( a )
 #endif
 
-	class DynamicLib
+	class EE_UTILITY_EXPORT DynamicLib
 	{
 	public:
-		EE_UTILITY_EXPORT DynamicLib(const String& name);
-		EE_UTILITY_EXPORT ~DynamicLib();
+		DynamicLib(const String& name);
+		~DynamicLib();
 
-		EE_UTILITY_EXPORT void  Load();
-		EE_UTILITY_EXPORT void  Unload();
-		EE_UTILITY_EXPORT const String& getName() const { return _name; }
-		EE_UTILITY_EXPORT void* GetSymbol(const String& strName) const;
+		void  Load();
+		void  Unload();
+		const String& getName() const { return _name; }
+		void* GetSymbol(const String& strName) const;
 	
 	public:
 		static const char* EXTENSION;
 		static const char* PREFIX;
 
 	protected:
-		EE_UTILITY_EXPORT String DynamicLibError();
+		String DynamicLibError();
 
 	protected:
 		String             _name;

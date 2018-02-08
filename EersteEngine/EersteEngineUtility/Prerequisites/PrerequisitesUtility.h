@@ -12,6 +12,9 @@
 // Custom error macros
 #include "../Error/Error.h"
 
+// Custom log macros
+#include "../Log/Log.h"
+
 // Custom allocated String
 #include "../String/String.h"
 

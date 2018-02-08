@@ -15,9 +15,9 @@ namespace ee
 		Degree& operator= (const Degree& d) { _deg = d._deg; return *this; }
 		Degree& operator= (const Radian& r);
 
-		float valueDegrees() const { return _deg; }
-		float valueRadians() const;
-		Degree wrap();
+		float ValueDegrees() const { return _deg; }
+		float ValueRadians() const;
+		Degree Wrap();
 
 		const Degree& operator+ () const { return *this; }
 		Degree operator+ (const Degree& d) const { return Degree(_deg + d._deg); }
